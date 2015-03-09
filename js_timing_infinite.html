@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+<head>
+<script>
+var c = 0;
+var t;
+function timeCount()
+{
+	document.getElementById('txt').value = c;
+	c = c + 1;
+	t = setTimeout("timeCount()", 1000)
+}
+</script>
+</head>
+
+<body>
+<form>
+	<input type = "button" value = "start timing!"
+	onClick = "timeCount()">
+	<input type = "text" id = "txt">
+</form>
+
+<p>click the button above, the timing start with 0.</p>
+
+</body>
+</html>
