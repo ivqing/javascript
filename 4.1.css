@@ -17,3 +17,6 @@ li {
 	padding: 1em;
 	list-style: none;
 }
+p {
+	clear: left;
+}
